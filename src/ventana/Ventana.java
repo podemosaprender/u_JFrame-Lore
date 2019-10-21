@@ -36,25 +36,21 @@ public class Ventana extends JFrame implements  ActionListener{
 		fondo.setBounds(0, 0, 800, 600);
 		panel.add(fondo);
 
-
 		boton1.setBounds(300, 200, 150, 40);
 		ImageIcon jugar = new ImageIcon("botJugar.png");
 		boton1.setIcon(new ImageIcon (jugar.getImage().getScaledInstance(boton1.getWidth(), boton1.getHeight(), Image.SCALE_SMOOTH)));
 		boton1.setFont(new Font("cooper black",Font.ITALIC,25));
 		panel.add(boton1);
 
-
 		boton2.setBounds(300, 250, 150, 40);
 		ImageIcon instruc = new ImageIcon("botInstruc.png");
 		boton2.setIcon(new ImageIcon (instruc.getImage().getScaledInstance(boton2.getWidth(), boton2.getHeight(), Image.SCALE_SMOOTH)));
 		panel.add(boton2);
 
-
 		boton3.setBounds(300, 300, 150, 40);
 		ImageIcon salir = new ImageIcon("botSalir.png");
 		boton3.setIcon(new ImageIcon (salir.getImage().getScaledInstance(boton3.getWidth(), boton3.getHeight(), Image.SCALE_SMOOTH)));
 		panel.add(boton3);	
-		add (boton3);
 		boton3.addActionListener ((ActionListener) this);
 
 
